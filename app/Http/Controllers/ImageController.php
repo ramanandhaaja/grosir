@@ -28,19 +28,25 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request_Invoice_No = $request->ID;
+        $request_Invoice_Date = $request->invoice_date;
+        $request_Name = $request->name;
+        $request_Address = $request->address;
+
         $img = imagecreatefromjpeg('./assets/invoice_format.jpg');
         $color = imagecolorallocate($img, 0, 0, 0);
 
         $font = "./assets/GOTHAM-MEDIUM.TTF";
 
-        $invoice_number = $request->ID;
+        $invoice_number = $request_Invoice_No;
         $invoice_date = "11/9/2024";
 
         //$name = $customer->first_name;
-        $name=$request->name;
+        $name= $request_Name;
         $address = "Jalan Kemang Timur Raya no 62";
 
-        $new_name = "A.jpeg";
+        $new_name = $request_Invoice_No.".jpeg";
 
         $product_name = " Minyak Kita 1L";
         $product_qty = " 1";
