@@ -91,7 +91,7 @@ class ImageController extends Controller
         header('Content-type: image/jpeg');
 
         /* create directory */
-        $directory = "./assets/uploads/certificates/user/";
+        $directory = asset("assets/uploads/certificates/user/");
 
         /* image save */
         imagejpeg($img, $directory . $new_name);
