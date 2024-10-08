@@ -11,7 +11,7 @@ class ImageController extends Controller
      */
     public function index()
     {
-        return 'none';
+        return 'index get';
     }
 
     /**
@@ -19,7 +19,7 @@ class ImageController extends Controller
      */
     public function create()
     {
-        //
+        return 'index create';
     }
 
     /**
@@ -28,8 +28,9 @@ class ImageController extends Controller
     public function store(Request $request)
     {
 
-        $imagePath = "testajaaa";
-        return view('image',compact('imagePath'));
+        $imagePath = $request->ID;
+        //return view('image',compact('imagePath'));
+        return 'POST REQUESTNYA BENER';
 
         /*
         $customer = new Customer();
@@ -121,7 +122,7 @@ class ImageController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return 'index edit';
     }
 
     /**
@@ -129,7 +130,7 @@ class ImageController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        return 'index update';
     }
 
     /**
@@ -137,6 +138,6 @@ class ImageController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        return 'index destroy';
     }
 }
