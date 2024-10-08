@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*', 'https://dashgrosir.flutterflow.app'],
+    'allowed_origins' => ['*', 'https://dashgrosir.flutterflow.app', 'https://dashgrosir.flutterflow.app/teamPage'],
 
     'allowed_origins_patterns' => ['*'],
 
