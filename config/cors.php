@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['GET', 'POST', 'PUT', 'OPTIONS'],
 
-    'allowed_origins' => ['*', 'https://dashgrosir.flutterflow.app', 'https://dashgrosir.flutterflow.app/teamPage'],
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => ['*'],
 
