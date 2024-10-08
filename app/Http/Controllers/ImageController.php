@@ -11,7 +11,7 @@ class ImageController extends Controller
      */
     public function index()
     {
-        //
+        return 'none';
     }
 
     /**
@@ -27,7 +27,8 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
-        return "holaaa";
+        $imagePath = "testajaaa";
+        return view('image',compact('imagePath'));
     }
 
     /**
