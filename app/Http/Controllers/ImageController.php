@@ -30,6 +30,9 @@ class ImageController extends Controller
     {
         @csrf_token();
         $imagePath = $request->ID;
+        echo $request->ID;
+        echo $request->name;
+
         //return view('image',compact('imagePath'));
         return 'POST REQUESTNYA BENER';
 
