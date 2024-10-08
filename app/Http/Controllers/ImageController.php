@@ -12,6 +12,7 @@ class ImageController extends Controller
     public function index()
     {
         return 'index get';
+
     }
 
     /**
@@ -19,7 +20,7 @@ class ImageController extends Controller
      */
     public function create()
     {
-        return 'index create';
+        return 'index ';
     }
 
     /**
@@ -111,7 +112,7 @@ class ImageController extends Controller
 
         /* image save */
         imagejpeg($img, $directory . $new_name);
-        $imagePath = $directoryJson . $new_name;
+        $imagePath = $directoryJson ."/". $new_name;
 
         //return redirect(asset($imagePath));
         return view('image',compact('imagePath'));
