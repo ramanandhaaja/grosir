@@ -15,11 +15,11 @@ return [
     |
     */
 
-    'paths' => ['api/*', '/images','/images/*', 'images','images/*', 'sanctum/csrf-cookie'],
+    'paths' => ['*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://dashgrosir.flutterflow.app'],
+    'allowed_origins' => ['*', 'https://dashgrosir.flutterflow.app'],
 
     'allowed_origins_patterns' => ['*'],
 
