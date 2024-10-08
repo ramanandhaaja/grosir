@@ -40,11 +40,11 @@ class ImageController extends Controller
         $font = "./assets/GOTHAM-MEDIUM.TTF";
 
         $invoice_number = $request_Invoice_No;
-        $invoice_date = "11/9/2024";
+        $invoice_date = $request_Invoice_Date;
 
         //$name = $customer->first_name;
         $name= $request_Name;
-        $address = "Jalan Kemang Timur Raya no 62";
+        $address = $request_Address;
 
         $new_name = $request_Invoice_No.".jpeg";
 
