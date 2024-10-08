@@ -28,7 +28,7 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
-
+        @csrf_token();
         $imagePath = $request->ID;
         //return view('image',compact('imagePath'));
         return 'POST REQUESTNYA BENER';
