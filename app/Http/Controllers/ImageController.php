@@ -27,8 +27,21 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
+
         $imagePath = "testajaaa";
         return view('image',compact('imagePath'));
+
+        /*
+        $customer = new Customer();
+        $customer->first_name = $request->first_name;
+        $customer->last_name = $request->last_name;
+        $customer->email = $request->email;
+        $customer->phone = $request->phone;
+        $customer->bank_account_number = $request->bank_account_number;
+        $customer->about = $request->about;
+        $customer->save();
+
+        return redirect()->route('customers.index');*/
     }
 
     /**
@@ -91,11 +104,13 @@ class ImageController extends Controller
         header('Content-type: image/jpeg');
 
         /* create directory */
-        $directory = asset("assets/uploads/certificates/user/");
+        $directory = "./assets/uploads/certificates/user/";
+        $directoryJson = asset('assets/uploads/certificates/user/');
+
 
         /* image save */
         imagejpeg($img, $directory . $new_name);
-        $imagePath = $directory . $new_name;
+        $imagePath = $directoryJson . $new_name;
 
         //return redirect(asset($imagePath));
         return view('image',compact('imagePath'));
