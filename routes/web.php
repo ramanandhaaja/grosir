@@ -10,4 +10,3 @@ Route::get('/', function () {
 
 Route::resource('images', ImageController::class);
 
-Route::post('posts', [PostController::class]);
