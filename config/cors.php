@@ -15,15 +15,15 @@ return [
     |
     */
 
-    'paths' => ['*'],
+    'paths' => ['api/*', '/images','/images/*', 'images','images/*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*', 'dashgrosir.flutterflow.app'],
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+    'allowed_headers' => ['Origin', 'Content-Type', 'X-Auth-Token', 'Cookie'],
 
     'exposed_headers' => [],
 
