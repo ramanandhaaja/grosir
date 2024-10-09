@@ -7,4 +7,3 @@ header("Allow: GET, POST, OPTIONS, PUT, DELETE");
 ?>
 
 {"imagePath":"{{ asset($imagePath) }}"}
-nandha
