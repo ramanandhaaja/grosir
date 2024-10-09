@@ -12,7 +12,7 @@ class ImageController extends Controller
         $post = Blog::all();
         return response()->json($post);*/
 
-        return '{"imagePath":"something.jpg"}';
+        return '[{"imagePath":"something.jpg"}]';
 
 
     }
