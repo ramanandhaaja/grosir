@@ -12,7 +12,7 @@ class ImageController extends Controller
         $post = Blog::all();
         return response()->json($post);*/
 
-        return '{"image":"something.jpg"}';
+        return '{"imagePath":"something.jpg"}';
     }
 
     function store(Request $request){
@@ -25,7 +25,7 @@ class ImageController extends Controller
         $post->save();
         return response()->json($post, 201);*/
 
-        return '{"image":"something post.jpg"}';
+        return '{"imagePath":"something post.jpg"}';
     }
 
 }
