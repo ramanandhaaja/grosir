@@ -17,9 +17,9 @@ return [
 
     'paths' => ['*'],
 
-    'allowed_methods' => ['GET', 'POST', 'PUT', 'OPTIONS'],
+    'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['http://157.230.253.149'],
 
     'allowed_origins_patterns' => ['*'],
 

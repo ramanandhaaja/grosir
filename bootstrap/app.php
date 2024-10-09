@@ -14,7 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
-            '/images','/images/*'
+            '/images','/images/*', '/api/*', 'api/*'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
